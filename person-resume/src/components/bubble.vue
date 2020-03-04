@@ -13,10 +13,10 @@ export default {
       var ctx = myCanvas.getContext('2d');
       ctx.font = '11px bold 黑体';
       ctx.globalAlpha = 0.8;
-      var tagList = ['阳光', '乐观', '奋斗', '吃货', '学习', '追求', '民谣', '努力', '吉他', '死磕'];
+      var tagList = ['阳光', '乐观', '奋斗', '吃货', '学习', '追求', '努力', '吉他', '死磕', '期待', '热情', '90后', '学生', '自信', '善良', '程序'];
       class Bubble {
         constructor(x, speedX, speedY) {
-          this.fontText = tagList[Math.ceil(Math.random()*9)];
+          this.fontText = tagList[Math.ceil(Math.random()*15)];
           this.x = x;
           this.y = 320;
           this.color = renderColor();
@@ -46,7 +46,7 @@ export default {
 
     for(let i = 0; i < 5500; i++){
       (function(){
-        setTimeout(getBubble, 2000*i);
+        setTimeout(getBubble, 1000*i);
       })()
     }
 
